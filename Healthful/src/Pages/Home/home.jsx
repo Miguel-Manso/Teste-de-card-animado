@@ -1,7 +1,8 @@
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import loguinha from "../../Assets/logo.svg";
-import { Container, Seção, Titulos, Titulo, Cartão, TextoCartão, TituloCartão, ImagemCartão} from "./style.jsx";
+import { Container, Seção, Titulos, Titulo, Cartão, TextoCartão, TituloCartão, ImagemCartão, LeiteContainer, Separador} from "./style.jsx";
+import { CardComp } from "../../Components/Cards/cards.jsx";
 
 
 export function Home () {
@@ -32,6 +33,7 @@ export function Home () {
               <ImagemCartão 
                 src={loguinha}>
               </ImagemCartão>
+
             </TextoCartão>
 
             <TituloCartão>
@@ -47,7 +49,10 @@ export function Home () {
             </TituloCartão>
 
           </Cartão>
-                    
+
+        <CardComp />
+        <Separador />
+
         <Footer />
       </Container>
     </>

@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import banner from "../../Assets/banner_home.svg";
 
+export const LeiteContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f2229;
+  overflow: hidden;
+`;
+
 const Container = styled.div`
   display: block;
   overflow: auto;
@@ -75,8 +85,13 @@ const TextoCartão = styled.p`
   font-weight: lighter;
 `;
 
+const Separador = styled.span`
+  margin-left: 10px;
+  margin-right: 10px;
+`;
+
 const ImagemCartão = styled.img`
   height: 8rem;
 `;
 
-export { Container, Seção, Titulo, Titulos, Cartão, TextoCartão, TituloCartão, ImagemCartão} 
+export { Container, Seção, Titulo, Titulos, Cartão, TextoCartão, TituloCartão, Separador, ImagemCartão} 
